@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- 
+    Use icons. -->
+    <script
+      src="https://kit.fontawesome.com/4fd11e560e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+
+      * {
+        font-size: large;
+      }
+      
+      .container {
+        display: flex;
+        padding-top: 2%;
+      }
+
+      .plan {
+        width: 73%;
+        margin-top: 2%;
+      }
+
+      .dev {
+        width: 25%;
+        text-align: center;
+        margin-top: 5%;
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 2px solid #000;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        /* background: #fee7e7; */
+      }
+
+      th {
+        text-align: center;
+        background: #fff;
+      }
+      .imgBx{
+      position: relative;
+      width: 200px;
+      height:200px;
+      border-radius: 50%;
+      overflow: hidden;
+     }
+       .img_container {
+        margin-top: 10%;
+      } 
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+      }
+     
+    
+      figcaption {
+        margin-top: 5%;
+        font-size: larger;
+      }
+
+      .title {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 1%;
+      }
+
+      .greetings {
+        font-weight: 800;
+        font-size: 1.5rem;
+      }
+
+      a {
+        text-decoration: none;
+        margin-left: 5%;
+      }
+
+      i {
+        font-size: 1.5rem;
+      }
+      
+
+      /* For viewing in smalll mobile screens */
+      @media (max-width: 768px){
+      .container {
+        display: flex;
+        flex-direction: row;
+      }
+     }
+
+    </style>
+  </head>
+  <body onload="typeWriter()">
+    <div id="container" class="container">
+      
+      <div id="dev" class="dev">
+        <!--
+            Type setting greetings. -->
+        <p id="greetings" class="greetings"></p>
+        I am Sharon Wanjiru.
+        <figure>
+          <div class="imgBx">
+           <div class="a"><a  href="https://lh3.googleusercontent.com/Ffxiv6kqEGP8ixQF1udakKYXQ--cdvQcyc7PlaIMbZT6UZMGZZRscOsfJ7QU7W5kMKSQ29K1WSR8h88INpHbZMRxcByaAYXpj620IuM6Ks7O4FzL40HDI420v29xNTmrRMBEisdPqw=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/Ffxiv6kqEGP8ixQF1udakKYXQ--cdvQcyc7PlaIMbZT6UZMGZZRscOsfJ7QU7W5kMKSQ29K1WSR8h88INpHbZMRxcByaAYXpj620IuM6Ks7O4FzL40HDI420v29xNTmrRMBEisdPqw=w600-h315-p-k" /> </a>
+           </div>
+          </div>
+          <figcaption>
+            My Stack: <br/>
+            <a href="https://github.com/sharonwanjiru/">
+              <i class="fa-brands fa-github"></i>Github
+            </a>
+          </figcaption>
+        </figure>
+        <a href="http://127.0.0.1:5500/cv.html"> My CV<br></a> 
+      </div>
+      
+      <div id="plan" class="plan">
+        <div id="title" class="title">2023 ROADMAP</div>
+        <table>
+          <thead>
+            <th>Application</th>
+            <th>Problem</th>
+            <th>Plan</th>
+            <th>Outcome</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Web Design</td>
+              <td>
+                <ul>
+                  <li> Raise your visibility on the web<br></li>                
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Design your CV and host it on digital oceans</br></li>
+                  <li>Design your portfolio and host it on digital oceans</li>
+                </ul>
+              </td>
+              <td>
+                There is visibility on the net.
+              </td>
+            </tr>
+            <tr>          
+          </tbody>
+
+          <tbody>
+            <tr>
+              <td>CRUD Data Management</td>
+              <td>
+                <ul>
+                   Get data for designing a carpark <br>  
+                  <li> How many cars per day? <br></li>  
+                  <li> How long do the cars stay? <br></li>                
+                  <li> Who owns the cars? <br></li>  
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Get the data in the Afternoon </li>
+                  <li>Analyse the data using MySQL and excel</li>
+                  <li>Clear the data</li>
+                </ul>
+              </td>
+              <td>
+                 Report the data report that is:<br>
+                 <li>The number of cars<br></li>
+                 <li>The duration of cars<br></li>
+              </td>
+            </tr>
+            <tr>          
+          </tbody>
+
+          <tbody>
+            <tr>
+              <td>Data Loading from Images</td>
+              <td>
+                <ul>
+                  <li> Convert the invoices to readable form<br></li>                
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Convert the invoice to excel</br></li>
+                  <li>Confirm it is accurate</li>
+                </ul>
+              </td>
+              <td>
+                Give a report of the invoice.
+              </td>
+            </tr>
+            <tr>          
+          </tbody>
+
+          <tbody>
+            <tr>
+              <td>Create webpage for the timetable and links to the portfolio</td>
+              <td>
+                <ul>
+                  <li>There is no timetable in the portfolio. <br></li>                
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Create a timetable webpageS</br></li>
+                  <li>Upload it to Digital Ocean</li>
+                </ul>
+              </td>
+              <td>
+                There is a timetable on the server.
+              </td>
+            </tr>
+            <tr>          
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+
+    <script>
+
+      function display_greetings() {
+        var today = new Date();
+        var hourNow = today.getHours();
+        var greeting;
+
+        if (hourNow > 15) {
+          greeting = "Good Evening";
+        } else if (hourNow > 12) {
+          greeting = "Good Afternoon";
+        } else if (hourNow > 0) {
+          greeting = "Good Morning";
+        } else {
+          greeting = "Welcome";
+        }
+
+        return greeting;
+      }
+
+      var i = 0;
+      var txt = display_greetings();
+      var speed = 250;
+
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("greetings").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+    </script>
+
+  </body>
+</html>

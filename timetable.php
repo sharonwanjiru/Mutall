@@ -32,10 +32,10 @@
             gap: 2%;
             align-items: center;
          }
-         .det{         
-            display: flex;
-            gap: 2%;
-            align-items: center;
+         
+         h5{
+          position: relative;
+          left: 40%
          }
 
         </style>
@@ -44,6 +44,13 @@
      <div class="title">
         <h1>TimeTable</h1>
      </div>
+     <div class="time">
+        <h5>  
+            <?php 
+            echo date("l jS \of F Y ");
+            ?>
+        </h5>  
+    </div>
 
      <div class="day">
          <h2>Monday</h2>
@@ -189,3 +196,4 @@
     </div>
 
     </body>
+

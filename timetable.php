@@ -52,7 +52,7 @@
         </h5>  
     </div>
 
-     <div class="day">
+     <div class="day <?php if(date('l') == 'Monday') echo 'highlight'; ?>" id="Monday">
          <h2>Monday</h2>
           <!-- Kangara Details -->
           <div class="details">   
@@ -88,7 +88,7 @@
     
        <!-- Tuesday -->
    
-     <div class="day">
+     <div class="day <?php if(date('l') == 'Tuesday') echo 'highlight'; ?>" id=" tuesday">
         <h2>Tuesday</h2>
        <!-- Francis' Details -->
         <div class="details">
@@ -112,7 +112,7 @@
     </div>
  
      <!-- Wednesday -->
-    <div class="day">
+    <div class="day <?php if(date('l') == 'ednesday') echo 'highlight'; ?>" id="wednesday">
         <h2>Wednesday</h2>
         <!-- Sharon's details -->
         <div class="details">
@@ -138,7 +138,7 @@
 
 
     <!-- Thursday -->
-    <div class="day">
+    <div class="day <?php if(date('l') == 'Monday') echo 'highlight'; ?>">
         <h2>Thursday</h2>
         <!-- Joan's details -->
         <div class="details">

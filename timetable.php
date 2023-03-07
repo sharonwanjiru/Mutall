@@ -140,6 +140,7 @@
     <!-- Thursday -->
     <div class="day <?php if(date('l') == 'Monday') echo 'highlight'; ?>">
         <h2>Thursday</h2>
+        <h2>Thursday</h2>
         <!-- Joan's details -->
         <div class="details">
             <div class="img">

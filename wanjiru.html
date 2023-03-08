@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sharon CV</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+          *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+          }
+        body{
+            background:lightpink;
+            display:flex; 
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            min-height: 100vh;
+        }
+        .container{
+          position:relative;
+          width: 100%;
+          max-width: 1000px;
+          min-height: 1000px;
+          margin: 30px;
+          background: white;
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+        }
+        .container .left_side{
+          position: relative;
+          background: darkblue;
+          padding: 40px;
+        }
+        .container .right_side{
+          position: relative;
+          background: rgba(177, 56, 56, 0.685);
+          padding: 40px;
+        }
+         /* h1{
+            position: relative;
+            left: 40%;
+        }
+        .personal{
+            position: relative;
+            left: 40%;
+        } */
+        .profile{
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-bottom: 20px;
+          border-bottom: 1px solid black;
+        }
+        .image{
+      position: relative;
+      width: 150px;
+      height:150px;
+      border-radius: 50%;
+      overflow: hidden;
+     }
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+      }
+        /* .profile img {
+        width: 100px;
+        border-radius: 60%;
+        height: 100px;
+        position: relative; 
+        left: 40%; 
+        } */
+        .profile h2{
+          color: bisque;
+          font-size: 1.5em;
+          margin-top: 20px;
+          text-align: center;
+          font-weight: 600;
+        }
+        .profile h2 span{
+          font-size: 0.8em;
+          text-align: center;
+          font-weight: 300;
+        }
+        .title{
+          color: white;
+          text-transform: uppercase;
+          font-weight: 600;
+          letter-spacing: 1px;
+          margin-bottom: 20px;
+          margin-top: 20px;
+        }
+        .contact ul{
+          position: relative;
+        }
+
+        .contact ul li{
+          color: white;
+          font-weight: 300;
+          position: relative;
+          list-style: none;
+          margin: 10px 0;
+          cursor: pointer;
+        }
+        .contact a{
+          color: darkorange;
+        }
+        .education li{
+
+          margin-bottom: 15px;
+          list-style: none;
+        }
+        .education h5{
+          color: burlywood;
+          font-weight: 500;
+        }
+        .education .course {
+          color: white;
+          font-weight: 500;
+        }
+        .education .school {
+          color: white;
+          font-weight: 200;
+        }
+        .language ul li{
+          color: white;
+          font-weight: 300;
+          position: relative;
+          list-style: none;
+          margin: 10px 0;
+          cursor: pointer;
+        }
+        .about{
+          margin-bottom: 50px;
+        }
+        .about:last-child
+        {
+          margin-bottom : 0;
+        }
+        .title2
+        {
+          color: black;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-bottom: 10px;
+          margin-top: 0x;
+
+        }
+        .about .box{
+          display: flex;
+          flex-direction: row;
+          margin: 10px;
+        }
+        </style>
+        </head>
+        <body>
+          <div class="container">
+            <!-- Left side Pane -->
+            <div class="left_side">
+             <!-- Profile Image and Name -->
+              <div class="profile">
+                <div class="image">
+                  <a  href="https://lh3.googleusercontent.com/Ffxiv6kqEGP8ixQF1udakKYXQ--cdvQcyc7PlaIMbZT6UZMGZZRscOsfJ7QU7W5kMKSQ29K1WSR8h88INpHbZMRxcByaAYXpj620IuM6Ks7O4FzL40HDI420v29xNTmrRMBEisdPqw=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/Ffxiv6kqEGP8ixQF1udakKYXQ--cdvQcyc7PlaIMbZT6UZMGZZRscOsfJ7QU7W5kMKSQ29K1WSR8h88INpHbZMRxcByaAYXpj620IuM6Ks7O4FzL40HDI420v29xNTmrRMBEisdPqw=w600-h315-p-k" /> </a>
+                </div>
+                <h2>Sharon Wanjiru Ndichu<br><span>Software Developer</span></h2>
+              </div>
+             <!-- Contact Information -->
+              <div class="contact">
+                <h3 class="title">Contacts</h3>
+                <ul>
+                  <li> Contact : 0701625154<br></li>
+                  <li>Email: sharondichu@gmail.com <br></li>
+                  <li>Linkedin:<strong><a href="https://www.linkedin.com/in/sharon-ndichu-b82524210/">Linkedin</a></strong></li>
+                  <li>Github:<strong><a href="https://github.com/sharonwanjiru">Github</a></strong></li>
+                </ul>
+              </div>
+              <!-- Education -->
+              <div class="education">
+                <h3 class="title">Education</h3>
+                <ul>
+                  <li>
+                    <h5>July 2019 – June 2023</h5>
+                    <h4 class="course"> Bachelor of Science in Informatics and Computer Science: Grade B(Second Upper) </h4>
+                    <h4 class="school">Strathmore University</h4>
+                  </li>
+
+                  <li>
+                    <h5>January 2015 - November 2018</h5>
+                    <h4 class="course">Kenya Certificate of Secondary Education: B</h4>
+                    <h4 class="school">Karima Girls High School</h4>
+                  </li>
+
+                  <li>
+                    <h5>January 2005 – November 2014</h5>
+                    <h4 class="course">Kenya Certificate of Primary Education: 402/500</h4>
+                    <h4 class="school">Naramat Academy</h4>
+                  </li>
+                </ul>
+              </div>
+              <!-- Certification -->
+              <div class="education">
+                <h3 class="title">Certifications</h3>
+                <ul>
+                  <li>
+                    <h5> February 2020 – March 2020</h5>
+                    <h4 class="course"> Cisco Certified Network Associates</h4>
+                    CCNA Routing and Switching: Introduction to Networks <br>
+                    IT Essentials: PC Hardware and Software
+                    <h4 class="school">Strathmore University</h4>
+                  </li>
+                </ul>
+              </div>
+              <!-- Languages -->
+              <div class="language">
+                <h3 class="title">Languages</h3>
+                <ul>
+                  <li>
+                    <span class="text">English - Proficient</span>
+                  </li>
+                  <li>
+                    <span class="text">Kiswahili- Proficient</span>
+                  </li>
+                  <li>
+                    <span class="text">German-Beginner</span>
+                  </li>
+                </ul>
+              </div>
+            
+            </div>
+
+
+            <div class="right_side">
+              <!-- About Profile -->
+              <div class="about">
+               <h2 class="title2">Profile</h2>
+               <p>
+                A motivated, responsible and passionate Computer Science student who aims to use creative technological solutions to positively impact the society and achieve the Sustainable Development Goals. I aim to become the best in my profession through the skills I have learnt over the years.
+               </p>
+              </div>
+              <!-- Work Experience -->
+              <div class="about">  
+                <h2 class="title2">Experience</h2>
+                <div class="box">
+                  <div class="y-comp">
+                    <h5>February 2022-March 2022</h5>
+                    <h5>Beacon of Hope Academy</h5>
+                  </div>
+                  <div class="text">
+                    <h4>Volunteer</h4>
+                    <p>
+                      <ul>
+                       <li>Helped students in mathematics and setting revision questions.<br></li>
+                       <li>Assisted the teachers in marking exams and uploading scores to the NEMIS website <br></li>
+                       <li>Mentored students</li>
+                       <li>Organizing school files</li>
+                     </ul>
+                   </p>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="y-comp">
+                    <h5>February 2023-Present</h5>
+                    <h5>Mutall-Data</h5>
+                  </div>
+                  <div class="text">
+                    <h4>Attaché</h4>
+                    <p>
+                      <ul>
+                       <li>Creating Websites<br></li>
+                       <li>Data collection for carpark<br></li>
+                       <li>Software Development</li>
+                     </ul>
+                   </p>
+                  </div>
+                </div>
+              </div>
+              <!-- School Projects -->
+              <div class="about">  
+                <h2 class="title2">School Projects</h2>
+                <div class="box">
+                  <div class="y-comp">
+                    <h5>June 2022 - December  2022</h5>
+                    <h5>Natural Language Processing</h5>
+                  </div>
+                  <div class="text">
+                    <h4>Creator</h4>
+                    <p>
+                      <ul>
+                        <li> Research on how natural language processing technique can be used in sentiment analysis on pharmaceutical drug reviews from users<br></li>
+                        <li>Use of TextBlob, LightGBM and sci-kit learn for classification and regression. <br></li>
+                        <li>Use of Python Language and Google Colaboratory</li>
+                      </ul>
+                   </p>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="y-comp">
+                    <h5>July 2021 – September 2021</h5>
+                    <h5>E-Nyumba</h5>
+                  </div>
+                  <div class="text">
+                    <h4>Co-creator</h4>
+                    <p>
+                      <ul>
+                        <li>Designed web application that helped house owners to market affordable houses<br></li>
+                        <li>Performed CRUD functionalities <br></li>
+                        <li>Developed using PHP, JavaScript and CSS</li>
+                      </ul>
+                   </p>
+                  </div>
+                </div>
+              </div>
+
+            <!-- Skills -->
+            <div class="about">
+              <h2 class="title2">Skills</h2>
+              <div class="text">
+                <p>
+                  <ul>
+                    <li> Language: C++, JavaScript, Python, Assembly, HTML/CSS<br></li>
+                    <li>Databases: MySQL, MongoDB <br></li>
+                    <li> Information Security: Cryptography, Firewall Planning, Risk Analysis<br></li>
+                    <li> Machine Learning: Natural Language Processing<br></li>
+                    <li> Operating Systems: Microsoft, Linux</li>
+                  </ul>
+               </p>
+              </div>
+             </div>
+
+             <!-- Extra Curriculum -->
+             <div class="about">
+              <h2 class="title2">Extra Curriculum</h2>
+              <ul>
+                <li>
+                  Google Developer Student Clubs-Current
+                </li>
+                <li>
+                  Strathmore German Club-Current
+                </li>
+                <li>
+                  Kenya Red Cross Society-  Member
+                </li>
+              </ul>
+            </div>
+            <!-- References -->
+            <div class="about">
+              <h2 class="title2">References</h2>
+              <p>
+                Mr. Stanslaus Mwongela<br>
+                Lecturer- School of Computing and Engineering Sciences<br>
+                Email: smwongela@strathmore.edu<br><br>
+              </p>
+              <p>
+             Mr. Alex Mbaluka<br>
+             Supervisor – Beacon of Hope<br>
+             Email: mbalukaalex@gmail.com<br>
+             Contact: +254 728 238227
+            </p>
+          </div>
+            
+            
+
+             
+            
+
+
+            </div>
+          </div>
+        
+        </body>
+
+</html>

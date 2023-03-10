@@ -182,8 +182,7 @@
         </div>   
         <!-- Daniel's Details -->   
         <div class="details">
-              
-                
+            <div class="img">  
                 <img class="rounded-corners" src="http://206.189.207.206/tracker/portfolio/2023/image/me.jpeg" alt="">
             </div>
             <div class="portfolio">

@@ -44,7 +44,9 @@ $stream = fopen('interns.csv', 'r');
     </div>
     
     <?php
-    while(($intern = fgetcsv($stream))!==false){
+    //
+    //Step throu each intern and view their details
+    foreach($interns as $intern){
         //
         $name =$intern[0];
         $initials=$intern[1];
@@ -56,7 +58,7 @@ $stream = fopen('interns.csv', 'r');
         
     ?>
         
-     <div class="day <?php if(date('l') == 'Monday') echo 'highlight'; ?> " id="monday">
+     <div class="day <?php if(date('l') == ) echo 'highlight'; ?> " id="monday">
          <h2><?php echo $day?></h2>
           
           <div class="details">   

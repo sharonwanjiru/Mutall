@@ -6,23 +6,35 @@
         <!-- <link rel="stylesheet" type="text/css" href="http://206.189.207.206/tracker/timetable/timetable.css"> -->
         <link rel="stylesheet" type="text/css" href="timetable.css">
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <meta name="viewport" content="width=device-width, 
+        initial-scale=1"> -->
+        <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+        <script src="http://206.189.207.206/tracker/timetable/script.js" defer></script>
        
     </head>
-    <body>
+  <body>
      <!-- Navigation Bar -->
     <header>
         <div class="logo">
           <p>Mutall</p>
         </div>
-          <nav>
-            <ul class="nav-list">
-              <li class="nav"><a class="ul" href="timetable.php">Home</a></li>
-              <li class="nav"><a class="ul" href="#">About</a></li>
-              <li class="nav"><a class="ul" href="#">Portfolios</a></li>
-            </ul>
-          </nav>  
-          <button><a class="ul" href="#">Chat</a></button>
+        <nav class="navbar">
+         <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+         </a>
+         <div class="nav-li hide">
+          <ul class="nav-list">
+            <li class="nav"><a class="ul" href="timetable.php">Home</a></li>
+            <li class="nav"><a class="ul" href="#">About</a></li>
+            <li class="nav"><a class="ul" href="#">Portfolios</a></li>
+            <li class="nav"> <button><a class="ul" href="http://206.189.207.206/sockets/">Chat</a></button></li>
+          </ul>
+         </div>
+        </nav> 
+        <!-- <button><a class="ul" href="#">Chat</a></button>    -->
+       </div> 
        
 		</header>
         <!-- Title and Time -->
@@ -38,18 +50,19 @@
     </div>
     
      
-     <!-- <div class="day highlight" id="monday"> -->
      <div class="day <?php if(date('l') == 'Monday') echo 'highlight'; ?> " id="monday">
          <h2>Monday</h2>
           <!-- Kangara Details -->
           <div class="details">   
                 <div class="img">
-                    <img class="rounded-corners" src="http://drive.google.com/uc?export=view&id=10KYtxL82ANblZbwrAgMc_R7WoHTu8KKD" alt="" 
-                        >
+                    <img class="rounded-corners" src="http://drive.google.com/uc?export=view&id=10KYtxL82ANblZbwrAgMc_R7WoHTu8KKD" alt="" >
                 </div>     
             <div class="portfolio">
                 <a href="http://206.189.207.206/tracker/portfolio/2023/kangara.html">George Kanga'ra(GK)</a><br>
-                <p><small>Bsc Computer Technology: 2019</small></p>
+                  <p><small>Bsc Computer Technology: 2019<br>
+                     Meru University
+                  </small></p>
+
             </div>        
           </div>
             <!-- Andrew Details -->
@@ -60,26 +73,37 @@
             </div>
             <div class="portfolio">
                 <a href="http://206.189.207.206/tracker/portfolio/2023/mugambi.html">Andrew Mugambi(AM)<br></a>
-                <p><small>Bsc. Business Information Technology:2016</small></p>
+                <p><small>Bsc. Business Information Technology:2016<br>
+                     Africa Nazarene University
+                </small></p>
               </div> 
           </div>
            <!-- Isaac Details -->
           <div class="details">
                 <div class="img">
-                    <a href="https://lh3.googleusercontent.com/6RSUmagWNh_WTpC3ttsnCGQy7l3X-hyXmpotYYRI5yufzTYYv3-V0jMD5kaBrcXVoz3aXgTvOqG035xnWPgwRm8IntLM5eczOx-6QFCS4rcw7AK2dwV84OG3_MwHpFQhfe66sEdffw=w2400?source=screenshot.guru"> <img class="rounded-corners" src="https://lh3.googleusercontent.com/6RSUmagWNh_WTpC3ttsnCGQy7l3X-hyXmpotYYRI5yufzTYYv3-V0jMD5kaBrcXVoz3aXgTvOqG035xnWPgwRm8IntLM5eczOx-6QFCS4rcw7AK2dwV84OG3_MwHpFQhfe66sEdffw=w417-h315-p-k" /> </a>          
+                   <img class= "rounded-corners" src="http://206.189.207.206/tracker/portfolio/2023/image/IMG_20190913_100204_8.jpg"  alt=" ">        
                 </div>
                 <div class="portfolio">
                     <a href="http://206.189.207.206/tracker/portfolio/2023/weru.html">Isaac Waweru(IW)<br></a> 
                     <p><small>N/A</small></p>
                 </div>
+          </div>  
+          <!-- Group Details  -->
+          <div class="details">
+                <div class="img-group">
+                <a href="https://lh3.googleusercontent.com/x7nJjq2_nEWxboeNnPQq1lqGs55EZGVie8UatieTs31D9LSXZ0whOYX56QHZNpKaJyvBQY5iaT_V4vvVfWEpiGvo_HkBkGV-dX-MWV_LwaSlqtM2WpQBDynL_KZ6EUmgBFMg8j-nww=w2400?source=screenshot.guru"> <img class="rounded-corners" src="https://lh3.googleusercontent.com/x7nJjq2_nEWxboeNnPQq1lqGs55EZGVie8UatieTs31D9LSXZ0whOYX56QHZNpKaJyvBQY5iaT_V4vvVfWEpiGvo_HkBkGV-dX-MWV_LwaSlqtM2WpQBDynL_KZ6EUmgBFMg8j-nww=w600-h315-p-k"> </a>
+                   <img class= "rounded-corners" src="https://lh3.googleusercontent.com/pw/AMWts8CyI5Nz8iqJYeK5oLBujhR23dm-FV4RtO-TUoxHoVMoT9_J0kpIi5StZsomLL4yeFi68a-fFvjjJashydaAYi4JnUAWYdE6qPGyefQ4yGkoa5_hCqi6B8CY_lO6xb0cg4qo-OEBqy0gU1Rtq74r-lrySQ=w708-h960-s-no?authuser=0"  alt=" ">                        
+                </div>
+                <div class="portfolio"> 
+                    <p><small>Content Management System</small></p>
+                </div>
           </div>   
-            
      </div>
     
        <!-- Tuesday -->
      <div class="day <?php if(date('l') == 'Tuesday') echo 'highlight'; ?>" id="tuesday">
-     <!-- <div class="day highlight" id="tuesday"> -->
-        <h2>Tuesday</h2>
+       <!-- <div class="day highlight" id="tuesday"> -->
+      <h2>Tuesday</h2>
        <!-- Francis' Details -->
         <div class="details">
             <div class="img">
@@ -88,111 +112,174 @@
             </div>
             <div class="portfolio">
             <a href="http://206.189.207.206/tracker/portfolio/2023/francis.html">Francis Nyakundi(FN)<br></a> 
-            <p><small>N/A</small></p>
+            <p>
+              <small>Diploma in Information Technology<br>
+                Nairobi Technical
+              </small>
+            </p>
           </div>   
         </div>   
           <!-- George's Details -->
         <div class="details">
              <div class="img">
-                    <a href="https://lh3.googleusercontent.com/x7nJjq2_nEWxboeNnPQq1lqGs55EZGVie8UatieTs31D9LSXZ0whOYX56QHZNpKaJyvBQY5iaT_V4vvVfWEpiGvo_HkBkGV-dX-MWV_LwaSlqtM2WpQBDynL_KZ6EUmgBFMg8j-nww=w2400?source=screenshot.guru"> <img class="rounded-corners" src="https://lh3.googleusercontent.com/x7nJjq2_nEWxboeNnPQq1lqGs55EZGVie8UatieTs31D9LSXZ0whOYX56QHZNpKaJyvBQY5iaT_V4vvVfWEpiGvo_HkBkGV-dX-MWV_LwaSlqtM2WpQBDynL_KZ6EUmgBFMg8j-nww=w600-h315-p-k" width="50px" height="50px"> </a>           
+                    <a href="https://lh3.googleusercontent.com/x7nJjq2_nEWxboeNnPQq1lqGs55EZGVie8UatieTs31D9LSXZ0whOYX56QHZNpKaJyvBQY5iaT_V4vvVfWEpiGvo_HkBkGV-dX-MWV_LwaSlqtM2WpQBDynL_KZ6EUmgBFMg8j-nww=w2400?source=screenshot.guru"> <img class="rounded-corners" src="https://lh3.googleusercontent.com/x7nJjq2_nEWxboeNnPQq1lqGs55EZGVie8UatieTs31D9LSXZ0whOYX56QHZNpKaJyvBQY5iaT_V4vvVfWEpiGvo_HkBkGV-dX-MWV_LwaSlqtM2WpQBDynL_KZ6EUmgBFMg8j-nww=w600-h315-p-k"> </a>           
             </div> 
             <div class="portfolio">
                  <a href="http://206.189.207.206/tracker/portfolio/2023/Munya.html">George Munya(GM)<br></a>
-                 <p><small>Diploma in Information Communication Technology:2022</small></p>
-                </div>   
-          </div>   
-    </div>
+                 <p><small>Diploma in Information Communication Technology:2022<br>
+                    Kabete Technical
+                 </small></p>
+            </div>   
+        </div>  
+        <!-- Group Details  -->
+        <div class="details">
+                <div class="img-group">
+                  <img class="rounded-corners" src="http://drive.google.com/uc?export=view&id=1xlKJbMwmZw6unrBj8RCWpXBytNXS4kKX" alt="" >       
+                </div>
+                <div class="portfolio"> 
+                    <p><small>Animation working group</small></p>
+                </div>
+        </div>    
+     </div>
 
     <!-- Wednesday -->
     <div class="day <?php if(date('l') == 'Wednesday') echo 'highlight'; ?> " id="wednesday">
-    <!-- <div class="day highlight" id="tuesday"> -->
         <h2>Wednesday</h2>
        <!-- sharon's Details -->
         <div class="details">
-            <div class="img">
-                <a href="https://lh3.googleusercontent.com/Ffxiv6kqEGP8ixQF1udakKYXQ--cdvQcyc7PlaIMbZT6UZMGZZRscOsfJ7QU7W5kMKSQ29K1WSR8h88INpHbZMRxcByaAYXpj620IuM6Ks7O4FzL40HDI420v29xNTmrRMBEisdPqw=w2400?source=screenshot.guru"> <img class="rounded-corners" src="https://lh3.googleusercontent.com/Ffxiv6kqEGP8ixQF1udakKYXQ--cdvQcyc7PlaIMbZT6UZMGZZRscOsfJ7QU7W5kMKSQ29K1WSR8h88INpHbZMRxcByaAYXpj620IuM6Ks7O4FzL40HDI420v29xNTmrRMBEisdPqw=w600-h315-p-k"  overflow="hidden"> </a>  
+            <div class="img">             
+               <a href="https://lh3.googleusercontent.com/Ffxiv6kqEGP8ixQF1udakKYXQ--cdvQcyc7PlaIMbZT6UZMGZZRscOsfJ7QU7W5kMKSQ29K1WSR8h88INpHbZMRxcByaAYXpj620IuM6Ks7O4FzL40HDI420v29xNTmrRMBEisdPqw=w2400?source=screenshot.guru"> <img class="rounded-corners" src="https://lh3.googleusercontent.com/Ffxiv6kqEGP8ixQF1udakKYXQ--cdvQcyc7PlaIMbZT6UZMGZZRscOsfJ7QU7W5kMKSQ29K1WSR8h88INpHbZMRxcByaAYXpj620IuM6Ks7O4FzL40HDI420v29xNTmrRMBEisdPqw=w600-h315-p-k" overflow="hidden"> </a>
             </div>
             <div class="portfolio">
-            <a href="http://206.189.207.206/tracker/portfolio/2023/wanjiru.html">Sharon Wanjiru(SW))<br></a> 
-            <p><small>Bsc. Informatics and Computer Science:2023</small></p>
-          </div>   
+               <a href="http://206.189.207.206/tracker/portfolio/2023/wanjiru.html">Sharon Wanjiru(SW))<br></a> 
+               <p>
+                <small>Bsc. Informatics and Computer Science:2023<br>
+                  Strathmore University
+                </small>
+              </p>
+           </div>   
         </div>   
           <!-- Carol's Details -->
         <div class="details">
              <div class="img">
-    
-             <a href="https://lh3.googleusercontent.com/6RSUmagWNh_WTpC3ttsnCGQy7l3X-hyXmpotYYRI5yufzTYYv3-V0jMD5kaBrcXVoz3aXgTvOqG035xnWPgwRm8IntLM5eczOx-6QFCS4rcw7AK2dwV84OG3_MwHpFQhfe66sEdffw=w2400?source=screenshot.guru"> <img class="rounded-corners" src="https://lh3.googleusercontent.com/6RSUmagWNh_WTpC3ttsnCGQy7l3X-hyXmpotYYRI5yufzTYYv3-V0jMD5kaBrcXVoz3aXgTvOqG035xnWPgwRm8IntLM5eczOx-6QFCS4rcw7AK2dwV84OG3_MwHpFQhfe66sEdffw=w417-h315-p-k" /> </a>         
+                <img class="rounded-corners" src="http://drive.google.com/uc?export=view&id=1xlKJbMwmZw6unrBj8RCWpXBytNXS4kKX" alt="" >
+                 <!-- <a href="https://lh3.googleusercontent.com/6RSUmagWNh_WTpC3ttsnCGQy7l3X-hyXmpotYYRI5yufzTYYv3-V0jMD5kaBrcXVoz3aXgTvOqG035xnWPgwRm8IntLM5eczOx-6QFCS4rcw7AK2dwV84OG3_MwHpFQhfe66sEdffw=w2400?source=screenshot.guru"> <img class="rounded-corners" src="https://lh3.googleusercontent.com/6RSUmagWNh_WTpC3ttsnCGQy7l3X-hyXmpotYYRI5yufzTYYv3-V0jMD5kaBrcXVoz3aXgTvOqG035xnWPgwRm8IntLM5eczOx-6QFCS4rcw7AK2dwV84OG3_MwHpFQhfe66sEdffw=w417-h315-p-k" /> </a>          -->
             </div> 
             <div class="portfolio">
                  <a href="http://206.189.207.206/tracker/portfolio/2023/wawira.html">Carol Wawira(CW)<br></a>
-                 <p><small>Diploma in Information Communication Technology:2022</small></p>
-                </div>   
+                 <p>
+                  <small>Diploma in Business Information Technology:2022<br>
+                     Cooperative University
+                  </small>
+                </p>
+            </div>   
+        </div>
+      
+        <!-- Group Details  -->
+        <div class="details">
+                <div class="img-group">
+                   <img class= "rounded-corners" src="http://206.189.207.206/tracker/v/images/sharonW.jpeg"  alt=" ">
+                   <img class= "rounded-corners" src="http://206.189.207.206/tracker/portfolio/2023/image/drew.jpg"  alt=" ">
+                   <a href="https://lh3.googleusercontent.com/x7nJjq2_nEWxboeNnPQq1lqGs55EZGVie8UatieTs31D9LSXZ0whOYX56QHZNpKaJyvBQY5iaT_V4vvVfWEpiGvo_HkBkGV-dX-MWV_LwaSlqtM2WpQBDynL_KZ6EUmgBFMg8j-nww=w2400?source=screenshot.guru"> <img class="rounded-corners" src="https://lh3.googleusercontent.com/x7nJjq2_nEWxboeNnPQq1lqGs55EZGVie8UatieTs31D9LSXZ0whOYX56QHZNpKaJyvBQY5iaT_V4vvVfWEpiGvo_HkBkGV-dX-MWV_LwaSlqtM2WpQBDynL_KZ6EUmgBFMg8j-nww=w600-h315-p-k" width="50px" height="50px"> </a>
+                </div>
+                <div class="portfolio"> 
+                    <p><small>Image management working group</small></p>
+                </div>
           </div>   
     </div>
 
     <!-- Thursday -->
     <div class="day <?php if(date('l') == 'Thursday') echo 'highlight'; ?> " id="thursday">
-    <!-- <div class="day highlight" id="thursday"> -->
         <h2>Thursday</h2>
-        <!-- Joan's details -->
-        <div class="details">
+       <!-- Bernards Details -->
+       <div class="details">
             <div class="img">
-                    <img class="rounded-corners" src="https://drive.google.com/uc?export=view&id=1gETpOsBaik0CumLnEZIEG1u4lkgi1ptl" alt="" 
-                        >
+               <img class="rounded-corners" src="http://206.189.207.206/tracker/v/images/muli.jpg" alt="">
+              <!-- <a href="https://lh3.googleusercontent.com/6RSUmagWNh_WTpC3ttsnCGQy7l3X-hyXmpotYYRI5yufzTYYv3-V0jMD5kaBrcXVoz3aXgTvOqG035xnWPgwRm8IntLM5eczOx-6QFCS4rcw7AK2dwV84OG3_MwHpFQhfe66sEdffw=w2400?source=screenshot.guru"> <img class="rounded-corners" src="https://lh3.googleusercontent.com/6RSUmagWNh_WTpC3ttsnCGQy7l3X-hyXmpotYYRI5yufzTYYv3-V0jMD5kaBrcXVoz3aXgTvOqG035xnWPgwRm8IntLM5eczOx-6QFCS4rcw7AK2dwV84OG3_MwHpFQhfe66sEdffw=w417-h315-p-k" /> </a> -->
             </div>
             <div class="portfolio">
-            <a href="http://206.189.207.206/tracker/portfolio/2023/nduta.html">Joan Nduta(JN)<br></a> 
-            <p><small>Bsc Economics and Statistics:2023</small></p>
+              <a href="http://206.189.207.206/tracker/portfolio/2023/muli.html">Bernard Muli(BM)<br></a> 
+             <p>
+              <small>Certificate in IT:2017<br>
+                 Daystar University
+              </small>
+            </p>
           </div>   
         </div>   
          <!-- James Details -->
         <div class="details">
-                <div class="img">
-                    <img class="rounded-corners" src="https://lh3.googleusercontent.com/pw/AMWts8CyI5Nz8iqJYeK5oLBujhR23dm-FV4RtO-TUoxHoVMoT9_J0kpIi5StZsomLL4yeFi68a-fFvjjJashydaAYi4JnUAWYdE6qPGyefQ4yGkoa5_hCqi6B8CY_lO6xb0cg4qo-OEBqy0gU1Rtq74r-lrySQ=w708-h960-s-no?authuser=0" alt="Ndichu James Kiberenge image" width="50px" height="50px">
-               </div>
+            <div class="img">
+              <img class="rounded-corners" src="https://lh3.googleusercontent.com/pw/AMWts8CyI5Nz8iqJYeK5oLBujhR23dm-FV4RtO-TUoxHoVMoT9_J0kpIi5StZsomLL4yeFi68a-fFvjjJashydaAYi4JnUAWYdE6qPGyefQ4yGkoa5_hCqi6B8CY_lO6xb0cg4qo-OEBqy0gU1Rtq74r-lrySQ=w708-h960-s-no?authuser=0" alt="">
+            </div>
             <div class="portfolio">
                 <a href="http://206.189.207.206/tracker/portfolio/2023/kiberenge.html">Ndichu James Kiberenge(JK)<br></a> 
-                <p><small>Diploma In IT:2020</small></p>
-              </div>   
+                <p>
+                  <small>Diploma In IT:2020<br>
+                    KCA 
+                  </small>
+                </p>
+             </div>   
         </div>   
+        <!-- Group Details  -->
+        <div class="details">
+                <div class="img-group">
+                   <img class= "rounded-corners" src="http://drive.google.com/uc?export=view&id=10KYtxL82ANblZbwrAgMc_R7WoHTu8KKD"  alt=" ">
+                   <img class= "rounded-corners" src="http://drive.google.com/uc?export=view&id=1xlKJbMwmZw6unrBj8RCWpXBytNXS4kKX"  alt=" ">                         
+                </div>
+                <div class="portfolio"> 
+                    <p><small>Drag and drop group</small></p>
+                </div>
+          </div>   
     </div>
+
       <!-- Friday -->
       <div class="day <?php if(date('l') == 'Friday') echo 'highlight'; ?>" id="friday">
-    <!-- <div class="day highlight" id= "friday"> -->
         <h2>Friday</h2>
        <!-- Peter's details -->
         <div class="details">
-                <div class="img">
-                    <img class="rounded-corners" src="https://db3pap003files.storage.live.com/y4mYkTxSEdlNhFREDQ7FZvRrdtMGliIzvjGykN_dx2Y16yNfAx0pECbD0sPnKLa9Xmc4u0E--9P-m5PO02f5A2BiZxJd-Iz8d4FGlhV899pAgFC5tn_p2UIGUfyJUeW0kDeuTEGWqTvbvvb6W2dNW-nVWk-5knHb0dbsIdk21q-g5cI5mQjSMhznMMK1ksAMIWX?width=256&amp;height=256&amp;cropmode=none" width="50px" height="50px">
+            <div class="img">
+              <img class="rounded-corners" src="https://db3pap003files.storage.live.com/y4mYkTxSEdlNhFREDQ7FZvRrdtMGliIzvjGykN_dx2Y16yNfAx0pECbD0sPnKLa9Xmc4u0E--9P-m5PO02f5A2BiZxJd-Iz8d4FGlhV899pAgFC5tn_p2UIGUfyJUeW0kDeuTEGWqTvbvvb6W2dNW-nVWk-5knHb0dbsIdk21q-g5cI5mQjSMhznMMK1ksAMIWX?width=256&amp;height=256&amp;cropmode=none" width="50px" height="50px">
             </div>
             <div class="portfolio">
-            <a href="http://206.189.207.206/tracker/portfolio/2023/kamau.html">Peter Kamau(PM)<br></a> 
-            <p><small>Bsc. Mathematics and Computer Science:2019</small></p>
-          </div>   
+             <a href="http://206.189.207.206/tracker/portfolio/2023/kamau.html">Peter Kamau(PM)<br></a> 
+             <p>
+              <small>Bsc. Mathematics and Computer Science:2019<br>
+                Multimedia University
+              </small>
+             </p>
+            </div>   
         </div>   
-        <!-- Bernards Details -->
-        <div class="details">
-              <div class="img">
-                   <a href="https://lh3.googleusercontent.com/6RSUmagWNh_WTpC3ttsnCGQy7l3X-hyXmpotYYRI5yufzTYYv3-V0jMD5kaBrcXVoz3aXgTvOqG035xnWPgwRm8IntLM5eczOx-6QFCS4rcw7AK2dwV84OG3_MwHpFQhfe66sEdffw=w2400?source=screenshot.guru"> <img class="rounded-corners" src="https://lh3.googleusercontent.com/6RSUmagWNh_WTpC3ttsnCGQy7l3X-hyXmpotYYRI5yufzTYYv3-V0jMD5kaBrcXVoz3aXgTvOqG035xnWPgwRm8IntLM5eczOx-6QFCS4rcw7AK2dwV84OG3_MwHpFQhfe66sEdffw=w417-h315-p-k" /> </a>
-            </div>
-            <div class="portfolio">
-            <a href="http://206.189.207.206/tracker/portfolio/2023/muli.html">Bernard Muli(BM)<br></a> 
-            <p><small>Certificate in IT:2017</small></p>
-          </div>   
-        </div>   
+        
         <!-- Daniel's Details -->   
         <div class="details">
-            <div class="img">  
-                <img class="rounded-corners" src="http://206.189.207.206/tracker/portfolio/2023/image/me.jpeg" alt="">
-            </div>
-            <div class="portfolio">
-            <a href="http://206.189.207.206/tracker/portfolio/2023/muli.html">Daniel Kaniu(DK)<br></a> 
-            <p><small>Bsc. Business Information Technology: 2019</small></p>
+          <div class="img">
+            <img class="rounded-corners" src="http://206.189.207.206/tracker/portfolio/2023/image/me.jpeg" alt="">
+          </div>
+          <div class="portfolio">
+           <a href="http://206.189.207.206/tracker/portfolio/2023/muli.html">Daniel Kaniu(DK)<br></a> 
+           <p>
+            <small>Bsc. Business Information Technology: 2019<br>
+              JKUAT
+            </small>
+           </p>
+         </div>   
+        </div> 
+        
+        <!-- Group Details  -->
+        <div class="details">
+                <div class="img-group">
+                   <img  src="http://drive.google.com/uc?export=view&id=10KYtxL82ANblZbwrAgMc_R7WoHTu8KKD" alt="" >
+                   <img src="https://db3pap003files.storage.live.com/y4mYkTxSEdlNhFREDQ7FZvRrdtMGliIzvjGykN_dx2Y16yNfAx0pECbD0sPnKLa9Xmc4u0E--9P-m5PO02f5A2BiZxJd-Iz8d4FGlhV899pAgFC5tn_p2UIGUfyJUeW0kDeuTEGWqTvbvvb6W2dNW-nVWk-5knHb0dbsIdk21q-g5cI5mQjSMhznMMK1ksAMIWX?width=256&amp;height=256&amp;cropmode=none">
+                   <img src="http://206.189.207.206/tracker/v/images/muli.jpg"  alt=" ">        
+                </div>
+                <div class="portfolio"> 
+                    <p><small>Migration group</small></p>
+                </div>
           </div>   
-        </div>   
 
     </div>
+     
+  </body>
 
-    </body>
 </html>
 

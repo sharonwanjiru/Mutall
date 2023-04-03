@@ -27,8 +27,8 @@
          <div class="nav-li hide">
           <ul class="nav-list">
             <li class="nav"><a class="ul" href="timetable.php">Home</a></li>
-            <li class="nav"><a class="ul" href="#">About</a></li>
-            <li class="nav"><a class="ul" href="#">Portfolios</a></li>
+            <li class="nav"><a class="ul" href="#">Minutes</a></li>
+            <li class="nav"><a class="ul" href="http://206.189.207.206/tracker/portfolio/2023/">Portfolios</a></li>
             <li class="nav"> <button><a class="ul" href="http://206.189.207.206/sockets/">Chat</a></button></li>
           </ul>
          </div>
@@ -68,8 +68,7 @@
             <!-- Andrew Details -->
           <div class="details">
             <div class="img">
-                    <img class="rounded-corners" src="http://206.189.207.206/tracker/portfolio/2023/image/drew.jpg" alt="" 
-                        >
+                    <img class="rounded-corners" src="http://206.189.207.206/tracker/portfolio/2023/image/drew.jpg" alt="" >
             </div>
             <div class="portfolio">
                 <a href="http://206.189.207.206/tracker/portfolio/2023/mugambi.html">Andrew Mugambi(AM)<br></a>
@@ -78,24 +77,17 @@
                 </small></p>
               </div> 
           </div>
-           <!-- Isaac Details -->
-          <div class="details">
-                <div class="img">
-                   <img class= "rounded-corners" src="http://206.189.207.206/tracker/portfolio/2023/image/IMG_20190913_100204_8.jpg"  alt=" ">        
-                </div>
-                <div class="portfolio">
-                    <a href="http://206.189.207.206/tracker/portfolio/2023/weru.html">Isaac Waweru(IW)<br></a> 
-                    <p><small>N/A</small></p>
-                </div>
-          </div>  
           <!-- Group Details  -->
           <div class="details">
                 <div class="img-group">
-                <a href="https://lh3.googleusercontent.com/x7nJjq2_nEWxboeNnPQq1lqGs55EZGVie8UatieTs31D9LSXZ0whOYX56QHZNpKaJyvBQY5iaT_V4vvVfWEpiGvo_HkBkGV-dX-MWV_LwaSlqtM2WpQBDynL_KZ6EUmgBFMg8j-nww=w2400?source=screenshot.guru"> <img class="rounded-corners" src="https://lh3.googleusercontent.com/x7nJjq2_nEWxboeNnPQq1lqGs55EZGVie8UatieTs31D9LSXZ0whOYX56QHZNpKaJyvBQY5iaT_V4vvVfWEpiGvo_HkBkGV-dX-MWV_LwaSlqtM2WpQBDynL_KZ6EUmgBFMg8j-nww=w600-h315-p-k"> </a>
-                   <img class= "rounded-corners" src="https://lh3.googleusercontent.com/pw/AMWts8CyI5Nz8iqJYeK5oLBujhR23dm-FV4RtO-TUoxHoVMoT9_J0kpIi5StZsomLL4yeFi68a-fFvjjJashydaAYi4JnUAWYdE6qPGyefQ4yGkoa5_hCqi6B8CY_lO6xb0cg4qo-OEBqy0gU1Rtq74r-lrySQ=w708-h960-s-no?authuser=0"  alt=" ">                        
+                  <img class="squared-corners" src="http://206.189.207.206/tracker/timetable/img/system.png" alt="" >          
                 </div>
                 <div class="portfolio"> 
-                    <p><small>Content Management System</small></p>
+                    <p>
+                      <small><strong>Content Management System</strong><br>
+                           GM, JK
+                      </small>
+                    </p>
                 </div>
           </div>   
      </div>
@@ -104,21 +96,16 @@
      <div class="day <?php if(date('l') == 'Tuesday') echo 'highlight'; ?>" id="tuesday">
        <!-- <div class="day highlight" id="tuesday"> -->
       <h2>Tuesday</h2>
-       <!-- Francis' Details -->
+        <!-- Isaac Details -->
         <div class="details">
-            <div class="img">
-                    <img class="rounded-corners" src="  http://206.189.207.206/tracker/v/images/frank.jpg" alt="" 
-                     >
-            </div>
-            <div class="portfolio">
-            <a href="http://206.189.207.206/tracker/portfolio/2023/francis.html">Francis Nyakundi(FN)<br></a> 
-            <p>
-              <small>Diploma in Information Technology<br>
-                Nairobi Technical
-              </small>
-            </p>
-          </div>   
-        </div>   
+                <div class="img">
+                   <img class= "rounded-corners" src="http://206.189.207.206/tracker/portfolio/2023/image/IMG_20190913_100204_8.jpg"  alt=" ">        
+                </div>
+                <div class="portfolio">
+                    <a href="http://206.189.207.206/tracker/portfolio/2023/weru.html">Isaac Waweru(IW)<br></a> 
+                    <p><small>Bsc.  Mechatronics engineering</small></p>
+                </div>
+          </div>  
           <!-- George's Details -->
         <div class="details">
              <div class="img">
@@ -134,10 +121,14 @@
         <!-- Group Details  -->
         <div class="details">
                 <div class="img-group">
-                  <img class="rounded-corners" src="http://drive.google.com/uc?export=view&id=1xlKJbMwmZw6unrBj8RCWpXBytNXS4kKX" alt="" >       
+                    <img class="squared-corners" src="http://206.189.207.206/tracker/timetable/img/css.png" alt="" >       
                 </div>
                 <div class="portfolio"> 
-                    <p><small>Animation working group</small></p>
+                    <p>
+                      <small><strong>Animation working group</strong><br>
+                       CW
+                      </small>
+                    </p>
                 </div>
         </div>    
      </div>
@@ -178,12 +169,14 @@
         <!-- Group Details  -->
         <div class="details">
                 <div class="img-group">
-                   <img class= "rounded-corners" src="http://206.189.207.206/tracker/v/images/sharonW.jpeg"  alt=" ">
-                   <img class= "rounded-corners" src="http://206.189.207.206/tracker/portfolio/2023/image/drew.jpg"  alt=" ">
-                   <a href="https://lh3.googleusercontent.com/x7nJjq2_nEWxboeNnPQq1lqGs55EZGVie8UatieTs31D9LSXZ0whOYX56QHZNpKaJyvBQY5iaT_V4vvVfWEpiGvo_HkBkGV-dX-MWV_LwaSlqtM2WpQBDynL_KZ6EUmgBFMg8j-nww=w2400?source=screenshot.guru"> <img class="rounded-corners" src="https://lh3.googleusercontent.com/x7nJjq2_nEWxboeNnPQq1lqGs55EZGVie8UatieTs31D9LSXZ0whOYX56QHZNpKaJyvBQY5iaT_V4vvVfWEpiGvo_HkBkGV-dX-MWV_LwaSlqtM2WpQBDynL_KZ6EUmgBFMg8j-nww=w600-h315-p-k" width="50px" height="50px"> </a>
+                  <img class= "squared-corners" src="http://206.189.207.206/tracker/timetable/img/processing.jpg"  alt=" "> 
                 </div>
                 <div class="portfolio"> 
-                    <p><small>Image management working group</small></p>
+                    <p>
+                      <small><strong>Image management working group</strong><br>
+                        GM, SW , AM
+                      </small>
+                    </p>
                 </div>
           </div>   
     </div>
@@ -223,11 +216,14 @@
         <!-- Group Details  -->
         <div class="details">
                 <div class="img-group">
-                   <img class= "rounded-corners" src="http://drive.google.com/uc?export=view&id=10KYtxL82ANblZbwrAgMc_R7WoHTu8KKD"  alt=" ">
-                   <img class= "rounded-corners" src="http://drive.google.com/uc?export=view&id=1xlKJbMwmZw6unrBj8RCWpXBytNXS4kKX"  alt=" ">                         
+                  <img class="squared-corners" src="http://206.189.207.206/tracker/timetable/img/drag.png" alt="" >
                 </div>
                 <div class="portfolio"> 
-                    <p><small>Drag and drop group</small></p>
+                    <p>
+                      <small><strong>Drag and drop group</strong><br>
+                       GK,CW
+                      </small>
+                    </p>
                 </div>
           </div>   
     </div>
@@ -253,13 +249,13 @@
         <!-- Daniel's Details -->   
         <div class="details">
           <div class="img">
-            <img class="rounded-corners" src="http://206.189.207.206/tracker/portfolio/2023/image/me.jpeg" alt="">
+            <a href="https://lh3.googleusercontent.com/vAecz6SImlrFjgdXiZwo69Qv28_d496EaIg0OusRPsJx0imA8mI4bd0Aa3tKw7m6qwOVNHM1Cj4RgPux7gnEDwwDuJV4kP8UXQioQWUo7ZGum5akSIP6lalMGOW9v-0KmzkFtI7flA=w2400?source=screenshot.guru"> <img class= "rounded-corners"src="https://lh3.googleusercontent.com/vAecz6SImlrFjgdXiZwo69Qv28_d496EaIg0OusRPsJx0imA8mI4bd0Aa3tKw7m6qwOVNHM1Cj4RgPux7gnEDwwDuJV4kP8UXQioQWUo7ZGum5akSIP6lalMGOW9v-0KmzkFtI7flA=w417-h315-p-k" /> </a>
           </div>
           <div class="portfolio">
-           <a href="http://206.189.207.206/tracker/portfolio/2023/muli.html">Daniel Kaniu(DK)<br></a> 
+           <a href="#">Joseph Mwaniki<br></a> 
            <p>
-            <small>Bsc. Business Information Technology: 2019<br>
-              JKUAT
+            <small>Bsc. Sales and Marketing: 2018<br>
+              Presbyterian University
             </small>
            </p>
          </div>   
@@ -268,12 +264,13 @@
         <!-- Group Details  -->
         <div class="details">
                 <div class="img-group">
-                   <img  src="http://drive.google.com/uc?export=view&id=10KYtxL82ANblZbwrAgMc_R7WoHTu8KKD" alt="" >
-                   <img src="https://db3pap003files.storage.live.com/y4mYkTxSEdlNhFREDQ7FZvRrdtMGliIzvjGykN_dx2Y16yNfAx0pECbD0sPnKLa9Xmc4u0E--9P-m5PO02f5A2BiZxJd-Iz8d4FGlhV899pAgFC5tn_p2UIGUfyJUeW0kDeuTEGWqTvbvvb6W2dNW-nVWk-5knHb0dbsIdk21q-g5cI5mQjSMhznMMK1ksAMIWX?width=256&amp;height=256&amp;cropmode=none">
-                   <img src="http://206.189.207.206/tracker/v/images/muli.jpg"  alt=" ">        
+                  <img class="squared-corners" src="http://206.189.207.206/tracker/timetable/img/migration.png" alt="" >     
                 </div>
                 <div class="portfolio"> 
-                    <p><small>Migration group</small></p>
+                    <p><small><strong>Migration group</strong><br>
+                        GK,PK,BM
+                       </small>
+                    </p>
                 </div>
           </div>   
 

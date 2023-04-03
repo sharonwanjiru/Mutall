@@ -5,7 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <title>Sharon</title>
-   <link rel="stylesheet" type="text/css" href="hub.css">
+   <link rel="stylesheet" type="text/css" href="http://206.189.207.206/curriculum_vitae/hub.css">
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

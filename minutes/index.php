@@ -4,32 +4,8 @@
  <title>Minutes</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-     a{
-        font-size: 25px;   
-     }   
-     p,li,code{
-        font-size: 22px;
-     }
-    table{
-        border:1px solid black;
-        width: 100%;
-    }
-    th, td {
-        border:1px solid black;
-    }
-     @media (max-width: 800px) {
-      a,td{
-        font-size: 25px;   
-        line-height:1.5;
-      }
-      table{
-        border:1px solid black;
-        width: 100%;
-    }
-     }
-  
-  </style>
+  <link rel="stylesheet" type="text/css" href="minutes.css">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0;">
 </head>
 <body>
 <?php
@@ -66,7 +42,7 @@ if (isset($_GET['file'])) {
     //
     //display the title of the table
     "
-    <table>
+    <table class=\"footable\">
      <tr>
       <th>Name</th>
       <th>Date</th>
@@ -95,6 +71,7 @@ if (isset($_GET['file'])) {
                 <td>$name</td>
                 <td>$date</td>
                 <td><a  href=\"?file=$file\">link</a><br></td>
+                <td><a  href=\"editor.php?file=$file\">Link</a><br></td>
             </tr>
           " ;
 
@@ -103,7 +80,6 @@ if (isset($_GET['file'])) {
     echo "</table>";
 }
 ?>
-</body>
 </html>
 
 

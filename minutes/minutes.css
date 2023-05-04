@@ -1,0 +1,44 @@
+a,
+td {
+  font-size: 25px;
+  line-height: 1.5;
+}
+p,
+li,
+code {
+  font-size: 22px;
+}
+table {
+  border: 1px solid black;
+  width: 100%;
+}
+th,
+td {
+  border: 1px solid black;
+}
+th {
+  font-size: 25px;
+  font-weight: 600px;
+  background: green;
+}
+table tr:nth-child(odd) td {
+  background: rgb(181, 236, 190);
+}
+table tr:nth-child(even) td {
+  background: white;
+}
+@media (max-width: 800px) {
+  a,
+  td {
+    font-size: 25px;
+    line-height: 1.5;
+  }
+  th {
+    font-size: 25px;
+    font-weight: 600px;
+  }
+  table {
+    border: 1px solid black;
+    width: 100%;
+  }
+}
